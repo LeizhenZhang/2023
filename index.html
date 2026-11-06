@@ -176,10 +176,6 @@
         <a href="https://lzhan011.github.io/2023/">Home</a>
       </h3>
 
-      <h3>
-        <a href="research/Leizhen_Zhang_Resume_1.pdf">Resume / CV</a>
-      </h3>
-
       <b>Academic Profiles</b><br><br>
 
       <div class="social-row">
@@ -276,6 +272,164 @@
         <li>Machine Learning</li>
       </ul>
 
+      <h2 id="research-experience">Research Experience</h2>
+
+      <h3>University of Louisiana at Lafayette</h3>
+      <p>
+        <strong>Graduate Teaching and Research Assistant</strong><br>
+        August 2024 &ndash; Present
+      </p>
+      <ul>
+        <li>
+          <strong>LLM reasoning evaluation:</strong> Designed benchmarks and
+          matched SAT/UNSAT evaluations to study reasoning reliability and
+          shortcut learning. First author of &ldquo;Satisfiability Solving with
+          LLMs: A Matched-Pair Evaluation of Reasoning Capability&rdquo;
+          (FSE 2026).
+        </li>
+        <li>
+          <strong>Software vulnerability detection:</strong> Studied model
+          evaluation, semantic program analysis, and robustness. First author
+          of &ldquo;Understanding Vulnerability Detection Difficulties, a New
+          Metric Suite and an Explanation&rdquo; (USENIX Security 2025
+          Poster Session).
+        </li>
+        <li>
+          <strong>VulValidate:</strong> Developed an LLM-agent-assisted framework
+          for auditing function-level vulnerability labels with executable
+          evidence. Audited 35,849 originally vulnerable-labeled instances
+          across BigVul, PrimeVul, and DiverseVul, confirming 20,510
+          vulnerabilities and identifying 6,819 label corrections.
+          Manuscript under review.
+        </li>
+        <li>
+          <strong>Model memorization:</strong> Co-author of &ldquo;BLIA: Detect
+          model memorization in binary classification model through passive
+          Label Inference attack.&rdquo; Manuscript under review.
+        </li>
+      </ul>
+
+      <h3>Old Dominion University</h3>
+      <p>
+        <strong>Graduate Teaching and Research Assistant</strong><br>
+        August 2022 &ndash; August 2024
+      </p>
+      <ul>
+        <li>
+          <strong>Uncertainty-aware document understanding:</strong>
+          Co-developed methods and experiments for uncertainty estimation in
+          table structure recognition. Co-first author of &ldquo;Uncertainty
+          Quantification in Table Structure Recognition&rdquo; (IEEE IRI 2024).
+        </li>
+        <li>
+          <strong>Fairness-aware machine learning:</strong> Developed causal
+          graph-based streaming feature selection methods and evaluations.
+          First author of &ldquo;Fairness-Aware Streaming Feature Selection
+          with Causal Graphs&rdquo; (IEEE SMC 2024).
+        </li>
+      </ul>
+
+      <h2 id="patents">Patents</h2>
+      <p>
+        <strong>A Semi-structured Document Recognition Method Based on Pattern
+        Recognition</strong><br>
+        Sole inventor: Leizhen Zhang<br>
+        Patent No.: ZL 202111324189.6<br>
+        Grant Publication No.: CN114038001B<br>
+        Filed: November 10, 2021 &middot; Granted: March 11, 2025<br>
+        Patentee: Shanghai Huihang Jiexun Network Technology Co., Ltd.
+      </p>
+      <p>
+        Developed tree-structured templates, template-library matching, and
+        relative-position-based field extraction for recognizing
+        semi-structured documents.
+      </p>
+
+      <h2 id="open-source">Selected Open Source Projects</h2>
+      <p>
+        Contributions focus on security, availability, input validation,
+        resource-bounded execution, and regression testing. Contribution counts
+        are as of November 2026.
+      </p>
+      <ul>
+        <li>
+          <p>
+            <strong><a href="https://github.com/vllm-project/vllm">vLLM</a></strong>
+            &mdash; 5 merged pull requests.<br>
+            Improved LLM serving security and robustness through safeguards
+            against sparse-embedding memory amplification, bounded validation
+            errors, and validation of tool calls, tool schemas, and prompt
+            embeddings.
+            <a href="https://github.com/vllm-project/vllm/pulls?q=is%3Apr+is%3Amerged+author%3ALeizhenZhang">Merged contributions</a>.
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong><a href="https://github.com/openclaw/openclaw">OpenClaw</a></strong>
+            &mdash; 15 merged pull requests.<br>
+            Fixed input-triggered Gateway stalls across messaging integrations,
+            rendering, and parsing; improved OAuth secret redaction, bounded
+            diagnostic state, authentication errors, and test reliability.
+            <a href="https://github.com/openclaw/openclaw/pulls?q=is%3Apr+is%3Amerged+author%3ALeizhenZhang">Merged contributions</a>.
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong><a href="https://github.com/OpenHands/OpenHands">OpenHands</a></strong>
+            &mdash; 3 merged pull requests.<br>
+            Updated DOMPurify to address a sanitization vulnerability, hardened
+            untrusted Markdown link attributes, and fixed intermittent
+            ProgressEvent failures after test-environment teardown.
+            <a href="https://github.com/OpenHands/OpenHands/pulls?q=is%3Apr+is%3Amerged+author%3ALeizhenZhang">Merged contributions</a>.
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong><a href="https://github.com/torvalds/linux">Linux Kernel</a></strong>
+            &mdash; 3 mainline commits and 1 maintainer-accepted regression test.<br>
+            Fixed a <a href="https://github.com/torvalds/linux/commit/c8dd1aa0274d8ad3df82ec1b064065f410ce99ed">NULL-pointer dereference in gen_init_cpio</a>,
+            corrected <a href="https://github.com/torvalds/linux/commit/a8f72a75b38a153d32a59b2ebca1d7079db1dd1a">Kconfig range-bound handling</a>,
+            and prevented an <a href="https://github.com/torvalds/linux/commit/52f26261e27dbdb7c6dea75d8f1a92ea805b2c58">infinite loop in conf_choice()</a>.
+            Also contributed an integer-overflow regression test for
+            get_options(), incorporated into a
+            <a href="https://github.com/torvalds/linux/commit/5d72266218b1c4dd2917f1df2b86f3b0e0a605c9">separately authored maintainer fix</a>.
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong><a href="https://github.com/LeizhenZhang/ADR_ESSL">ADR_ESSL</a></strong>
+            &mdash; Research artifact developer; FSE 2026.<br>
+            Implemented paired SAT/UNSAT evaluation, the Accurate
+            Differentiation Rate (ADR), and instance-generation, model-evaluation,
+            and analysis scripts for reproducible LLM reasoning evaluation.
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong><a href="https://github.com/lamps-lab/UQTTA">UQTTA</a></strong>
+            &mdash; Co-developer; IEEE IRI 2024.<br>
+            Co-developed TTA-m, including table-image augmentation, model
+            fine-tuning, ensemble-based confidence estimation, and evaluation
+            utilities for uncertainty-aware document processing.
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong><a href="https://github.com/zlzhan011/FSFS">FSFS</a></strong>
+            &mdash; Research artifact developer; IEEE SMC 2024.<br>
+            Implemented Streaming Feature Selection with Causal Fairness (SFCF)
+            and benchmark evaluations balancing predictive utility and
+            proxy-related fairness in streaming feature environments.
+          </p>
+        </li>
+      </ul>
+
+      <h2 id="professional-recognition">Professional Recognition</h2>
+      <p>
+        <strong>IEEE Senior Member</strong>, Institute of Electrical and
+        Electronics Engineers (IEEE).
+      </p>
+
     </section>
 
   </div>
@@ -284,3 +438,4 @@
 
 </body>
 </html>
+
